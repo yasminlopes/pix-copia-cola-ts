@@ -1,0 +1,48 @@
+{
+  "name": "pix-copia-e-cola-ts",
+  "version": "1.0.0",
+  "description": "Gerador de Pix Copia e Cola em TypeScript puro - sem dependências externas",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "tsc --noEmit",
+    "example": "ts-node examples/simpleExample.ts",
+    "demo": "open public/index.html || xdg-open public/index.html || start public/index.html",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pix",
+    "pagamento",
+    "brasil",
+    "banco-central",
+    "emv",
+    "qrcode",
+    "payment",
+    "typescript",
+    "no-dependencies",
+    "crc16"
+  ],
+  "author": "Yasmin Lopes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
